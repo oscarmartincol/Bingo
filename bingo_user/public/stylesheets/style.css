@@ -1,0 +1,131 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.logo {
+  margin: 0;
+  background-color: #1D0210;
+  text-align: center;
+}
+
+.brand-title {
+  font-family: 'Allura', cursive;
+  font-size: xxx-large;
+  color: #DC143C;
+  padding-bottom: 10px;
+}
+
+.buda {
+  padding-top: 30px;
+  width: 70px;
+  height: 70px;
+}
+
+body {
+  margin: 0 auto;
+  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+  text-align: center;
+  align-content: center;
+  background-color: #1D0210;
+}
+
+
+.selection-btn {
+  width: 50%;
+  border: none;
+  background-color: cornflowerblue;
+  height: 40px;
+  font-size: 18px;
+}
+
+.selection-btn:hover {
+  cursor: pointer;
+  background: #ADD8E6;
+}
+
+.selected {
+  background-color: #ADD8E6;
+}
+
+.forms {
+  width: 400px;
+  margin-left: 35%;
+  background-color: #DEB887;
+  padding: 0;
+}
+
+.login-form {
+  padding: 20px 0;
+  width: 100%;
+  text-align: left;
+}
+
+.login-form label {
+  margin: 0;
+  padding-left: 10px;
+  font-weight: bold;
+  display: block;
+}
+
+.login-form input[type="text"], .login-form input[type="password"]{
+  width: 90%;
+  padding-left: 10px;
+  margin-bottom: 20px;
+  border: none;
+  border-bottom: 1px solid;
+  background: transparent;
+  font-size: 16px;
+}
+
+.login-form input[type="submit"]{
+  border: none;
+  width: 90%;
+  outline: none;
+  height: 40px;
+  background: #b80f22;
+  color: #fff;
+  font-size: 18px;
+  border-radius: 20px;
+}
+
+.login-form input[type="submit"]:hover {
+  cursor: pointer;
+  background: #ffc107;
+  color: #1D0210;
+}
+
+.hide {
+  display: none;
+}
+
+.rules {
+  padding: 30px;
+  color: white;
+}
+
+.rules ol {
+  font-size: 20px;
+}
+
+li {
+  padding: 10px;
+}
+
+.rules h1 {
+  padding: 20px;
+}
+
+.rules p {
+  text-align: left;
+  font-size: 20px;
+}
+
+.rules h2, .rules h3 {
+  text-align: left;
+  padding: 20px;
+}
+ .ex {
+   width: 30%;
+   padding: 5px;
+ }

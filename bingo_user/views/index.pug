@@ -1,0 +1,57 @@
+extends layout
+
+block content
+    include header
+    div(class="forms")
+        nav
+            button(class="selection-btn selected" id="login-btn") Iniciar sesión
+            button(class="selection-btn" id="signIn-btn") Registrarse
+        div(class="login-form")
+
+            div(class="hide" id="name-box")
+                label(for="name") Nombre(s)
+                input(id="name" name="name" required type="text" placeholder="Ingrese su nombre")
+
+                label(for="lastname") Apellido(s)
+                input(id="lastname" name="lastname" required type="text" placeholder="Ingrese su apellido")
+
+            label(for="username") Nombre de usuario
+            input(id="username" required type="text" placeholder="Ingrese el nombre de usuario")
+
+            label(for="password") Contraseña
+            input(id="password" required type="password" placeholder="Ingrese la contraseña")
+
+            input(type="submit" value="Ingresar" id="login" onclick="loginUser()")
+            input(class="hide" value="Registrarse" onclick="register()" id="sign-in" type="submit")
+
+    div(class="rules")
+        h1 Instrucciones del juego
+        p ¡Bienvenido/a a nuestro juego de bingo en línea! Este manual te guiará a través de las reglas y las diferentes formas de ganar en el juego. El objetivo principal es completar patrones en tu cartón de bingo y presionar "¡Bingo!" antes que los demás jugadores.
+        h2 Cómo jugar:
+        ol
+            li
+                p Registro: Para comenzar, crea una cuenta en nuestra plataforma de juego en línea y accede a la sala de bingo.
+            li
+                p Generación de cartones: Antes de que comience el juego, tendrás la opción de generar un carton de bingo. Los cartones contienen una cuadrícula de números únicos.
+            li
+                p Inicio del juego: Una vez que este presente mínimo un jugador en espera, se comienza a contar un minuto para que se unan más jugadores y después se van a comenzar a generar números al azar.
+            li
+                p Marcar los números: A medida que se llamen los números, verifica si los tienes en tu cartón. Si un número coincide con uno de los tuyos, márcalo.
+        h2 Formas para ganar:
+        ol
+            li
+                p Línea: Para ganar una línea, debes marcar todos los números en una fila horizontal, vertical o diagonal en tu cartón.
+                h3 ejemplos:
+            div
+                img(src="./images/ejemplo1.png" class="ex" alt="Linea horizontal")
+                img(src="./images/ejemplo2.png" class="ex" alt="Linea horizontal")
+                img(src="./images/ejemplo3.png" class="ex" alt="Linea horizontal")
+            li
+                p Bingo: El bingo se logra cuando marcas todos los números en uno de tus cartones. Debes asegurarte de haber marcado todos los números requeridos antes de presionar "¡Bingo!"
+            img(src="./images/ejemplo4.png" class="ex" alt="Carton de bingo completo")
+        h2 Verificación de ganadores:
+        p Una vez que un jugador grita "¡Bingo!", el juego se detendrá temporalmente para verificar la validez de la reclamación.
+        p Si la reclamación es válida, el jugador será declarado ganador y se le otorgará el reconocimiento correspondiente. En caso de que la reclamación sea errónea, el jugador será descalificado.
+
+    script(src="javascripts/home.js")
+
